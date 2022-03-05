@@ -1,0 +1,157 @@
+/*ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px;
+    width: 100%;
+}
+body{
+    background: lightgray;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+body, input,button{
+    font-size: ;
+    font-family: sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+/*fin reset*/
+
+
+
+body{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+header{
+height: ;
+padding: 10px;
+
+}
+nav{
+    padding: 10px;
+   
+}
+nav :hover{
+    background-color:azure;
+
+}
+main{
+    background-color: lightgrey;
+    border: 10px black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color:grey;
+    margin: 40px;
+}
+footer{
+    background-color: rgb(70, 67, 67);
+    color:rgb(210, 250, 250);
+    padding: 10px;
+       
+}
+
+
+
+/*GRADIENTES*/
+.gradlineal{
+    background-image: linear-gradient(to bottom right ,yellow ,orangered,lightgreen, rgb(176, 4, 250));
+}
+.gradradial{
+    background-image: radial-gradient(violet ,green );
+}
+/*transiciones*/
+.transicion{
+    transition: all 2s;
+}
+.transicion:hover{
+    width: 600px;
+    height: 400px;
+    border: grey solid 10px;
+    background-color: #42378f;
+background-image: url(imagenes/imagen\ 2\ desarrollo-web_s.jpg);
+}
+/*transformaciones*/
+.mover {
+    transform: translate(450px, -300px);/*eje x, eje y*/
+}
+.rotar{
+    transform: rotate(45deg);
+}
+.escalar{
+    transform: scale(3, 1);
+}
+.torcer{
+    transform: skew(20deg, 10deg);
+}
+
+/*animaciones*/
+
+.tituloanimado{
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s; 
+    
+}
+.cajaanimada{
+animation-name: caja;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+
+}
+
+@keyframes titulo{
+    from{
+        transform: translate(-200px);
+        opacity: 0;
+
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+
+
+    }
+}
+@keyframes caja{
+    0%{
+        border-radius: 50%;
+        background-color: orangered;
+        transform: skewx(35deg);
+
+    }
+    20%{
+
+        transform: rotateY(45deg);
+        background-color: aqua;
+    }
+    30%{
+        transform: translatex(70vh);
+        background-color: red;
+    }
+    50%{
+        transform: scale(1.5, 0.5);
+    }
+    75%{
+        transform: translate(80vh);
+        background-color: yellowgreen;
+    }
+    100%{
+        border-radius: 50%;
+    }
+
+}
